@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Surveillance, développement et éthique</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Surveillance, développement et éthique">
+		<meta name="author" content="Jef Mathiot">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -40,343 +40,621 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
-
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+				<section id="intro" data-background="#25020F">
+					<h1>
+						<span>Surveillance</span>
+						<span>Éthique</span>
+						<span>Développement</span>
+					</h1>
+					<aside>
+						<time datetime="2015-11-12">12 novembre 2015</time> - Meetups <a href="https://twitter.com/servebox">@ServeBox</a>
 					</aside>
 				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+				<section id="team" data-background="#9E1E4C">
+					<h3>Les productifs</h3>
+					<img src="images/team/Benjamin.png">
+					<img src="images/team/Benoit.png">
+					<img src="images/team/Cam.png">
+					<img src="images/team/Chris.png">
+					<img src="images/team/Fab.png">
+					<img src="images/team/Sylvain.png">
+					<h3>Les planchistes</h3>
+					<img src="images/team/Eric.png">
+					<img src="images/team/Olivier.png">
+					<img src="images/team/Paul.png">
+					<h3>Les autres</h3>
+					<img src="images/team/Jef.png">
+					<img src="images/team/Seb.png">
 				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
+				<section id="ethics" data-background="#304848"
+					data-notes="L'approche éthique du développement informatique est un vaste sujet.
+					Par exemple, nous pourrions citer l'accessibilité des sites web,
+					la portabilité des données, l'absence de contribution des
+					entreprises aux logiciels libres qu'elles utilisent, la lisibilité
+					des tarifs, la lisibilité des CGUs, etc. Ici, focus
+					sur la surveillance, la protection des données personnelles, et la
+					transparence.">
+					<h2>Éthique ?</h2>
 				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
+				<section id="surveillance" data-background="#F0F0D8"
+					data-notes="Mais au fait, de quoi parle-t'on ?">
+					<h2>
+						<span>Ok, mais c'est quoi, la</span>
+						<span>surveillance ?</span>
+					</h2>
 				</section>
-
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<section id="state-surveillance" data-background="images/surveillance.jpg">
+						<h2>Surveillance <span>d'État</span></h2>
+					</section>
+					<section id="snowden-leaks" data-background="images/nsa.jpg"
+						data-notes="2013, les révélations d'Edward Snowden confirment
+						ce que beaucoup soupçonnaient. Surtout, elles font prendre
+						conscience au grand public de l'étendue de la collecte de données
+						(communications téléphoniques, Internet) par la NSA et ses
+						partenaires (UKUSA), et de la sophistication de l'appareil de
+						surveillance.">
+						<h3>
+							<span>2013</span>
+							<span>Snowden Leaks</span>
+						</h3>
+					</section>
+					<section id="upstream" data-background="images/submarine-cable-map-2015.png"
+						data-notes="&quot;Upstream collection&quot; est un programme
+						d'interception &quot;en flux&quot; (câbles et switches) du trafic
+						téléphonique et Internet transitant par les USA.">
+						<h3>
+							<span>Up</span>stream
+							<span>Collection</span>
+						</h3>
+					</section>
+					<section id="prism" data-background="images/nsa.jpg"
+						data-notes="PRISM est une autre source de collecte d'information.
+						Les données de dizaines de milliers de comptes sont fournies par des
+						entreprises privées (Microsoft, Yahoo, Google, Facebook, Skype,
+						Dropbox, Apple) à la NSA.">
+						<img src="images/PRISM.png" alt="PRISM" width="200px">
+						<h3>
+							PRISM
+						</h3>
+					</section>
+					<section id="xkeyscore" data-background="images/nsa.jpg"
+						data-notes="XKEYSCORE est l'un des programmes de la NSA. Il s'agit
+						d'un système d'aggrégation de données issues de différentes sources
+						et de requêtage. Le système est distribué sur environ 700 serveurs
+						répartis sur 150 lieux physiques aux quatre coins du globe.
+						XKEYSCORE met à disposition, via un système de requêtage élaboré,
+						5% du trafic Internet. Pour des raisons techniques,
+						le contenu est conservé pendant quelques jours, les métadonnées
+						sont, elles, conservées pendant 45 jours. D'après certains documents
+						les cookies utilisés par les réseaux sociaux et ad networks, les
+						identifiants utilisés par les applications smartphones sont
+						utilisés pour tracer les individus.">
+						<h3><span>X</span>KEYSCORE</h3>
+					</section>
+					<section id="fisa" data-background="images/hearingaid.jpg"
+						data-notes="2013, la veille des révélation d'Edward Snowden, la
+						court FISA ordonne à une filiale de Verizon de permettre à la NSA
+						d'accéder aux journaux de l'ensemble des communications téléphonique
+						de ses clients. Citoyens U.S., donc... Au temps pour la
+						&quot;Foreign Intelligence&quot;. Bon nombre de décisions prises par
+						la cour FISA le sont en secret.">
+						<h3>
+							<span>Foreign Intelligence</span>
+							<span>Surveillance Act</span>
+						</h3>
+					</section>
+					<section id="dsac" data-background="images/hearingaid.jpg"
+						data-notes="Moins connu du grand public, le DSAC est un consortium
+						regroupant différentes agences fédérales (FBI, DHS, etc.),
+						polices locales, &quot;fusion centers&quot;, et 360
+						entreprises du secteur privé (dont Boeing, Fedex, Citibank,
+						Coca-Cola, Mastercard, American Express, Walmart, General Electric,
+						United Airlines, etc.). Les fusions centers pratiquent massivement
+						le data mining sur des sources ouvertes, dont les réseaux sociaux.
+						Initialement créé pour détecter des menaces terroristes, les
+						activités du DSAC ont glissé vers la détection &quot;all hazards
+						&quot;. En 2011, des documents prouvent que le DSAC a participé à
+						la surveillance des actions du mouvement (pacifique) Occupy Wall
+						Street.">
+						<h3>
+							<span>Domestic Security</span>
+							<span>Alliance Council</span>
+						</h3>
+					</section>
+					<section id="gchq" data-background="images/union-jack.jpg"
+						data-notes="Le Government Communications Headquarters (GCHQ)
+						anglais, collecte également les câbles transitant par son
+						territoire, à une vaste échelle. En 2012, le GCHQ collectait
+						quotidiennement 50 milliards de métadonnées, avec l'intention de
+						doubler cette capacité dans l'année. Historique web, appels Skype,
+						Instant Messaging, localisation des téléphones, SMS,
+						interactions sociales sont placés dans un vaste dépôt, BLACK HOLE,
+						qui permet de croiser les informations collectées. Certains
+						documents montrent que le GCHQ vise en particulier les cookies
+						(MUTANT BROTH) issus de différentes sources (YouTube, YouPorn,
+						Facebok, Amazon,Reddit, BBC) car ils sont un pivot idéal pour
+						permettre le croisement des informations. Impliqué dans le piratage
+						de Gemalto, et de l'opérateur belge Belgacom. KARMA POLICE, MUTANT
+						BROTH, SOCIAL ANTHROPOID, MARBLED GECKO, MEMORY HOLE, INFINITE
+						MONKEYS, TEMPORA, la créativité ne manque pas... Exploite également
+						XKEYSCORE.">
+						<h3>Government Communications Headquarters</h3>
+					</section>
+					<section id="snoopers-charter"
+						data-background="images/london.jpg"
+						data-notes="Le débat fait rage en ce moment même au Royaume-Uni
+							sur l'Investigatory Powers Bill, qui vise à étendre officiellement
+							la collecte de données &quot;domestiques&quot;, et à entraver la
+							possibilité de recours légaux contre la surveillance.">
+						<h3>Snooper’s <span>Charter</span></h3>
+					</section>
+					<section id="loi-renseignement"
+						data-background="images/palais-bourbon.jpg"
+						data-notes="Le 24 juillet 2015, après une procédure accélérée (une
+						seule lecture par chambre) le parlement adopte définitivement la loi
+						relative au renseignement.">
+						<h3><span>Loi</span> Renseignement</h3>
+					</section>
+					<section id="loi-renseignement-donnees-connexion"
+						data-background="images/po-boxes.jpg"
+						data-notes="La loi prévoit le recueil, auprès des opérateurs et FAI
+						(CPCE), hébergeurs ou éditeurs de sites ou d'applications (LCEN),
+						des données de connexion (surveillance individuelle).">
+						<h3>Accès administratif <span>données de connexion</span></h3>
+					</section>
+					<section id="loi-renseignement-boites-noires"
+						data-background="images/bedroom.jpg"
+						data-notes="Le code de la sécurité intérieure prévoit l'installation
+						de &quot;traitements automatisés&quot; à peu près n'importe où sur
+						les réseaux français (CPCE et LCEN). Ces traitements sont
+						destinés à &quot;détecter des connexions susceptibles de révéler une
+						menace terroriste&quot; (sans soupçons préalable, ni cible
+						prédéfinie).">
+						<h3><span>Boîtes</span> noires</h3>
+					</section>
+					<section id="loi-renseignement-metadata"
+						data-background="images/metadata.jpg"
+						data-notes="Contrairement à ce qu'a répondu le conseil
+						constitutionnel, la loi n'affirme nulle part que les données de
+						connexion ne peuvent porter sur les contenus, sauf pour les
+						opérateurs &quot;protégés&quot; par le CPCE.">
+					</section>
+					<section id="loi-renseignement-piratage"
+						data-background="images/pwnpi.jpg"
+						data-notes="La loi prévoit également que les services spécialisés de
+						renseignement puissent utiliser des outils offensifs - pirater des
+						cibles - pour récupérer des données, si d'autres moyens ne sont pas
+						envisageables.">
+						<h3>License to <span>Pwn</span></h3>
+					</section>
+					<section id="loi-renseignement-executif"
+						data-background="images/matignon.jpg"
+						data-notes="Les procédures de mise en place des dispositifs de
+						recueil de renseignement relèvent exclusivement du pouvoir exécutif
+						(premier ministre).">
+						<h3>Pouvoir <span>exécutif</span></h3>
+					</section>
+					<section id="loi-renseignement-cnctr"
+						data-background="images/usine-a-gaz.jpg"
+						data-notes="Seule la CNCTR (et les moyens dont disposent les
+						services) permettent une régulation des activités de renseignement
+						technique. Ses délibérations sont secrètes, elle n'émet qu'un avis.">
+						<h3>CNCTR</h3>
+					</section>
+					<section id="loi-renseignement-crypto"
+						data-background="images/cipher-machine.jpg"
+						data-notes="La loi prévoit l'obligation de remise des clés
+						secrètes.">
+						<h3>Cryptographie</h3>
+					</section>
+					<section id="loi-renseignement-sanctions"
+						data-background="images/prison.jpg"
+						data-notes="La révélation de l'existence d'une technique de
+						surveillance, le refus de livrer les clés secrètes (crypto), de
+						communiquer des informations ou documents (ou des informations
+						erronées) donnent lieu à des sanctions pénales.">
+						<h3>Sanctions</h3>
+					</section>
+					<section id="loi-renseignement-recours"
+						data-background="images/lol.gif"
+						data-notes="Toute personne qui s'estime injustement surveillée peut
+						saisir le conseil d'État qui lui répondra, à l'issue de la
+						procédure... que les vérifications ont été faites.">
+						<h2>Recours</h2>
+					</section>
+					<section id="loi-surveillance-internationale"
+						data-background="images/submarine-cable-map-2015.png"
+						data-notes="Les dispositions de la loi renseignement retoquées par
+						le Conseil Constitutionnel concernait la surveillance
+						internationale (le coeur de la loi). Le parlement a voté une
+						nouvelle proposition de loi le 5 novembre.">
+						<h3>Surveillance <span>Internationale</span></h3>
+					</section>
+					<section id="loi-surveillance-internationale-decret-2007"
+						data-background="images/submarine-cable-map-2015.png"
+						data-notes="Le nouveau texte inclut des élements visant à légaliser
+						un dispositif mis en oeuvre suite à un décret secret (2007)
+						autorisant l'écoute de câbles sous-marins, avec la participation
+						d'Orange et Alcatel-Lucent. La DGSE a passé un accord de coopération
+						avec le GCHQ. Le dispositif a été étendu par François Hollande dans
+						un plan quinquennal.">
+						<h3>Décret <span>Secret</span></h3>
+					</section>
+					<section id="nsa-gchq-fr"
+						data-background="#F0F0D8"
+						data-notes="Interception des câbles sous-marins, collaborations
+						public-privé, sondes et systèmes distribués, on retrouve (et c'est
+						logique) nombre de similitudes dans les dispositifs et législations
+						mis en place dans le monde.">
+						<h3><span>Dispositifs</span> <span>Similaires</span></h3>
+					</section>
+					<section id="moyens-doctrine"
+						data-background="#F0F0D8"
+						data-notes="Les différences résident dans les moyens et (au moins
+						en apparence) dans les doctrines. Les moyens et les doctrines
+						changent, les lois perdurent.">
+						<h3><span>Moyens</span><span>Doctrines</span></h3>
+					</section>
+					<section id="confiance"
+					data-background="images/trust.jpg"
+						data-notes="Le renseignement est nécessaire mais en démocratie, le
+						pouvoir doit s'accompagner d'une plus grande transparence. Si ce
+						n'est pas le cas, la seule question qui importe est : en tant que
+						société, avons nous confiance dans nos gouvernements actuels,
+						futurs... et dans ceux des autres ?">
+					</section>
 				</section>
-
 				<section>
-					<h2>Much more</h2>
+					<section id="internet-silos"
+						data-background="images/tape-library.jpg"
+						data-notes="Internet en général, et le Web en particulier, est
+						aujourd'hui dominé par des mastodontes. Par exemple, Google traite
+						20 pétaoctets (1 Po = 1 000 000 Go) d'information chaque jour. À titre de comparaison,
+						la somme de tous les écrits connus dans toutes les langues s'élève
+						est estimée à 50 pétaoctets.">
+						<h2>Corporate Surveillance<span>Internet Silos</span></h2>
+					</section>
+					<section id="google"
+						data-background="#fff"
+						data-notes="Quand on évoque Google (pardon, Alphabet), on pense
+						principalement à son moteur de recherche (4 millions de requêtes
+						traitées par minute). Or, Google est d'abord le plus grand
+						ad network du monde, qui s'appuie sur une myriade de produits pour
+						collecter des données (recherche, emails, lieux, itinéraires et
+						déplacements, rendez-vous, historique de navigation, documents,
+						vidéos et comportement de visionnage, interlocuteurs, etc.).">
+						<img src="images/googleproducts.jpg">
+					</section>
+					<section id="dont-be-evil"
+						data-background="images/dont-be-evil.jpeg"
+						data-notes="Google n'a d'ambition que pour elle-même. En témoigne
+						sa collaboration avec certains gouvernements, par exemple le
+						gouvernement chinois pour censurer certains termes de recherche, le
+						changement de pratique plutôt opaque en terme de ranking des
+						résultats de recherche, sa participation à Prism, etc.">
+					</section>
+					<section id="google-analytics"
+						data-notes="D'après les statistiques collectées via Ghostery (sur
+						un échantillon de 400 000 sites), grâce à Google Analytics,
+						Ad Sense, Double Click, Widgets, etc., Google pourrait tracer la
+						navigation des personnes sur 88 % des sites web.">
+						<pre>
+							<code>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+							</code>
+						</pre>
+					</section>
+					<section id="facebook"
+						data-background="images/black-hole.jpg"
+						data-notes="Facebook est souvent comparé à un trou noir,
+						condamné à croître en aspirant
+						toujours plus de données personnelles et de contenus, à tel point
+						que certaines personnes confondent Facebook et Web. Quels que
+						soient les &quot;privacy settings&quot; choisis, cela ne concerne
+						que les autres utilisateurs, pas Facebook.">
+						<h3>Facebook</h3>
+					</section>
+					<section id="facebook-tracker"
+						data-background="#fff"
+						data-notes="Comme les traceurs de Google, les boutons
+						&quot;Share&quot; qui envahissent les sites tiers sont utilisés par
+						Facebook pour tracer le comportement de navigation des personnes.">
+						<img src="images/share-facebook.jpeg">
+					</section>
+					<section id="login-with"
+						data-background="#fff"
+						data-notes="De plus en plus de sites ou d'applications délèguent
+						l'authentification des utilisateurs à Facebook, Google ou autre,
+						faisant de ces derniers des tiers de confiance, sans mesurer
+						l'impact potentiel sur le profilage des personnes. Ce type
+						d'authentification a d'ailleurs donné des idées à l'administration,
+						qui va centraliser l'authentification des services publics sur
+						France Connect. À partir de 2017, certaines données seront ensuite
+						centralisées et mises automatiquement à	disposition des organismes
+						pour &quot;simplifier&quot; les démarches.">
+						<img src="images/login-with.png">
+					</section>
+					<section id="gafam"
+						data-background="#F0F0D8"
+						data-notes="Google, Facebook, Microsoft, Apple, Amazon,
+						mais aussi grande distribution, enseignes (cartes de fidélité),
+						transports, banques, assurances, les individus laissent dans leur
+						sillage une quantité stupéfiante d'information. Les données
+						personnelles, le marketing comportemental sont devenus des business
+						au détriment de la vie privée. Sous la contrainte ou pour défendre
+						certains intérêts, la frontière entre entreprises privées et
+						secteur public est de plus en plus perméable.">
+						<h3><span>Limité</span> <span>aux GAFAM ?</span></h3>
+					</section>
+				</section>
+				<section>
+					<section id="crime-surveillance"
+						data-background="images/social-network.png"
+						data-notes="Plus de données personnelles signifie aussi plus
+						de risques de fraudes, de vol d'identité, d'extorsion, de chantage,
+						etc. La criminalité en ligne est un business... la surveillance
+						aussi.">
+						<h2><span>Criminalité</span>Surveillance</h2>
+					</section>
+					<section id="data-leaks"
+						data-background="images/ashley-madison.jpeg"
+						data-notes="En juillet 2015, un groupe de criminels a volé 25 Go de
+						données personnelles issues d'un site de relations extra-conjugales,
+						Ashley Madison. La fuite est à l'origine de plusieurs
+						divorces, voire de suicides.">
+					</section>
+					<section id="hacking-team"
+						data-background="images/hacking-team.png"
+						data-notes="Hacking Team est une société italienne proposant à ses
+						clients (agences gouvernementales, notamment dans des pays peu
+						respectueux des droits de l'homme) des solutions de &quot;défense
+						proactive&quot;, autrement dit des technologies offensives de
+						surveillance, d'intrusion et de prise de contrôle (RCS). La société
+						a été placée dans la liste des &quot;ennemis de l'Internet&quot; par
+						RSF.">
+					</section>
+					<section id="palantir"
+						data-background="images/palantir.jpg"
+						data-notes="Financée notamment par la CIA (In-Q-Tel), Palantir est
+						la licorne de l'analyse de données, valorisée à 20 milliards de
+						dollars, la société entretient des liens étroits avec la communauté
+						du renseignement (NSA, DHS, CIA, FBI, etc.).">
+					</section>
+				</section>
+				<section>
+					<section id="so-what"
+						data-background="images/tontons.jpg"
+						data-notes="Nous vivons dans ce que Franck Pasquale appelle la
+						&quot;société des boîtes noires&quot;, une sorte de miroir sans
+						tain où les personnes sont transparentes quant à leur comportement,
+						et où l'exploitation des données se fait, elle, dans la plus
+						grande opacité.">
+						<h2>So <span>what ?</span></h2>
+					</section>
+					<section id="sondage-ordre-des-avocats"
+						data-notes="Pendant les débats sur la loi renseignement,
+						l'ordre des avocats de Paris a commandé un sondage à l'institut
+						CSA. Ce sondage montre clairement que les français sont opposés
+						à la surveillance.">
+						<h3>Français hostiles à</h3>
+						<table>
+							<tr>
+								<td>suivi des conversations</td>
+								<td>91 %</td>
+							</tr>
+							<tr>
+								<td>conservation des données personnelles</td>
+								<td>83 %</td>
+							</tr>
+							<tr>
+								<td>surveillance de la navigation</td>
+								<td>83 %</td>
+							</tr>
+							<tr>
+								<td>surveillance des réseaux sociaux</td>
+								<td>70 %</td>
+							</tr>
+						</table>
+						<a href="http://www.avocatparis.org/loi-renseignement-sondage-exclusif-ordre-des-avocats-de-paris-institut-csa">Source</a>
+					</section>
+					<section id="blockers" data-background="images/pub.png"
+						data-notes="D'après différentes études, au moins 25 % des personnes
+						se serviraient d'ad blockers, et la proportion est en train
+						d'exploser (+50 % en 2014). Si le but principal est de bloquer la
+						publicité envahissante, de plus en plus d'utilisateurs s'équipent
+						pour échapper au profilage publicitaire qu'ils jugent intrusifs
+						pour leur vie privée. Un autre étude (Pew Research Center), montre
+						que 6 personnes sur 10 décide de ne pas installer des applications
+						smarpthones après qu'elles aient pris connaissance des
+						permissions.">
+					</section>
+					<section id="gandi"
+						data-background="images/globe.jpg"
+						data-notes="D'après Stéphane Ramoin, de Gandi, 40 à 50 % de leurs
+						clients américains se tournaient vers Gandi suite aux révélations
+						d'Edward Snowden et à la crainte de la surveillance de la NSA.">
+					</section>
+				</section>
+				<section>
+					<section id="solutions"
+						data-background="#304848"
+						data-notes="Même en adoptant un point de vue strictement économique,
+						la surveillance est nuisible. La centralisation, elle, bénéficie à
+						quelques très gros acteurs au détriment des plus petits, ou des
+						nouveaux entrants. Quelles solutions peut on facilement mettre en
+						oeuvre ?">
+						<h2>Solutions</h2>
+					</section>
+					<section id="chiffrement"
+						data-background="#fff6ff"
+						data-notes="Le chiffrement est l'un des outils que l'on peut
+						relativement facilement mettre en oeuvre. Par exemple TLS (SSL)
+						pour protéger vos sites et applications, mais aussi chiffrement des
+						données sensibles, des sauvegardes, hachage des mots de passe.
+						Communiquer en interne sur des canaux sécurisés (emails, messages).">
+						<img src="images/encrypt.jpg">
+					</section>
+					<section id="dont-collect"
+						data-background="#304848"
+						data-notes="Si vous n'avez pas besoin d'une donnée, ne la collectez
+						pas. Si vous en avez besoin, évaluez son niveau de visibilité
+						(notamment depuis les moteurs de recherche), anticipez la durée de
+						sa rétention, le niveau de protection nécessaire, sa destruction.">
+						<h3>Avez vous besoin de ces données ?</h3>
+					</section>
+					<section id="accompagnement-juridique"
+						data-background="#304848"
+						data-notes="CNIL, LCEN, loi renseignement, etc., faites vous
+						accompagner par un (bon) juriste, pas seulement pour écrire des
+						CGU...">
+						<h3>
+							<div>Accompagnement</div>
+							<img src="images/avocat.png">
+							<div>juridique</div>
+						</h3>
+					</section>
+					<section id="third-parties"
+						data-background="#304848"
+						data-notes="Trop souvent, nous fonctionnons en mode
+						&quot;pilote automatique&quot; quand nous choisissons des services
+						tiers pour répondre à tel ou tel besoin (coucou, Google Analytics).
+						Prenez l'habitude d'évaluer ces services dans une perspective de
+						sécurité et de vie privée. Évaluez les solutions alternatives
+						(hébergées par vos soins), et définissez finement votre besoin.">
+						<h3>Tierces parties</h3>
+					</section>
+					<section id="modele-de-menace"
+						data-background="#304848"
+						data-notes="Nous fonctionnons trop en auto-suggestion, en pensant
+						que nous sommes petits, que ça n'arrive qu'aux autres, etc.
+						Posez-vous simplement la question : quel risque je prends si les
+						données que j'exploite se retrouvent dans la nature ? Quel risque
+						pour vos utilisateurs, vos clients ?">
+						<h3>Modèle de menace</h3>
+					</section>
+					<section id="politique-securite"
+						data-background="#304848"
+						data-notes="La sécurité est souvent un compromis avec la facilité.
+						Néanmoins, quelques règles simples, faisant consensus dans votre
+						équipe, permettent de mitiger facilement les risques : politique
+						d'accès aux machines, gestion de mots de passe, de clés.
+						Sécurisation a minima du matériel (chiffrement de certains
+						répertoires par exemple).">
+						<h3>Politique de sécurité</h3>
+					</section>
+					<section id="audits-securite"
+						data-background="#304848"
+						data-notes="La valeur de la sécurité n'est souvent perçue qu'après
+						un problème. C'est un domaine notoirement difficile, alors faites
+						vous aider. Auditez régulièrement vos pratiques, vos applications.
+						Quelques heures d'un expert freelance et un peu de bon sens
+						permettront de détecter et de régler les problèmes les plus
+						flagrants.">
+						<h3>Audits de sécurité</h3>
+					</section>
+					<section id="dod"
+						data-background="#304848"
+						data-notes="Comment intégrer les enjeux de la vie privée, de la
+						sécurité au quotidien ? Le Definition of Done est une pratique
+						qui nous vient de &quot;l'Agile&quot;. Elle consiste à mettre en
+						place, progressivement, une checklist des critères définissant la
+						notion de &quot;fini&quot; d'une fonctionnalité ou d'une release,
+						du point de vue de la qualité (tests, ergonomie, appareils
+						supportés, etc.). Intégrez des critères relatifs à la sécurité
+						et à la vie privée dans votre DoD.">
+						<h3>Definition of Done</h3>
+					</section>
+					<section id="transparence"
+						data-background="#304848"
+						data-notes="Le respect de la vie privée, la transparence sont
+						des qualités de plus en plus appréciées par les utilisateurs de nos
+						applications. Synthétisez vos CGU/TOS, communiquez clairement sur
+						votre politique de gestion des données personnelles (et mettez la
+						en oeuvre ;)). Créez une page web avec les coordonnées d'une
+						personne à joindre (et sa clé GPG) pour les questions relatives à
+						la sécurité, à la	vie privée, ou pour déclarer un problème
+						potentiel.">
+						<h3>Transparence</h3>
+					</section>
+				</section>
+				<section id="merci">
+					<img src="images/thumbs.png">
+					<h2>Merci ;)</h2>
+				</section>
+				<section class="credits">
+					<h2>Crédits photos</h2>
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li>Surveillance in NYC's financial district -
+							<a href="https://www.flickr.com/photos/jonathanmcintosh/3744953433">CC BY-SA 2.0 - Jonathan McIntosh</a>
+						</li>
+						<li>Quartier général de la NSA à Fort George G. Meade, Maryland -
+							<a href="https://commons.wikimedia.org/wiki/File:National_Security_Agency_headquarters,_Fort_Meade,_Maryland.jpg">Public Domain - Wikipedia</a>
+						</li>
+						<li>Submarine Cable Map 2015 -
+							<a href="https://www.telegeography.com/telecom-resources/map-gallery/submarine-cable-map-2015/index.html">CC BY-NC-ND 3.0 - TeleGeography</a>
+						</li>
+						<li>London bridge photo from hot air balloon -
+						<a href="https://en.wikipedia.org/wiki/File:London_from_a_hot_air_balloon.jpg">CC BY 2.0 - Daniel Chapma</a>
+						</li>
+						<li>National Assembly of France, Paris -
+						<a href="https://commons.wikimedia.org/wiki/File:Palais_Bourbon_Assembl%C3%A9e_nationale.JPG">CC BY-SA 3.0 - Ex13</a>
+						</li>
+						<li>Post office boxes -
+						<a href="https://commons.wikimedia.org/wiki/File:La_Conner,_WA_-_P.O._boxes.jpg">CC BY-SA 3.0 - Joe Mabel</a>
+						</li>
+						<li>A model of the bedroom which appeared at the end of 2001: A Space Odyssey -
+						<a href="https://commons.wikimedia.org/wiki/File:Bedroom_model_%288649770252%29.jpg">CC BY 2.0 - William Beutler</a>
+						</li>
+						<li>Hotel de Matignon during official occasion -
+						<a href="https://commons.wikimedia.org/wiki/File:Matignon_gala.jpg">Brazilian Federal Government - Public Domain</a>
+						</li>
+						<li>Usine à Gaz Narbonne -
+						<a href="https://commons.wikimedia.org/wiki/File:Usine_%C3%A0_Gaz._Narbonne.jpg">Public Domain</a>
+						</li>
+						<li>16th-century book-shaped French cipher machine, with arms of Henri II of France -
+						<a href="https://commons.wikimedia.org/wiki/File:16th_century_French_cypher_machine_in_the_shape_of_a_book_with_arms_of_Henri_II.jpg">CC BY-SA 3.0 - Uploadalt</a>
+						</li>
+						<li>Corridor of the end of the world prison at Ushuaia, now a museum -
+						<a href="https://commons.wikimedia.org/wiki/File:End_of_the_world_prison.jpg">CC BY 2.0 - Luis Argerich</a>
+						</li>
+						<li>Trust -
+						<a href="https://www.flickr.com/photos/44124466731@N01/27687364">CC BY-SA 2.0 - purplejavatroll</a>
+						</li>
+						<li>Tape library, CERN, Geneva 2 -
+						<a href="https://www.flickr.com/photos/doctorow/2711081060">CC BY-SA 2.0 - Cory Doctorow</a>
+						</li>
+						<li>Artist's impression of the surroundings of the supermassive black hole in NGC 3783 -
+						<a href="https://fr.wikipedia.org/wiki/Fichier:Supermassive_black_hole_in_NGC_3783.jpg">CC BY 4.0 - ESO/M. Kornmesser</a>
+						</li>
+						<li>Graph representing the metadata of thousands of archive documents, documenting the social network of hundreds of League of Nations personals.
+						<a href="https://commons.wikimedia.org/wiki/File:Social_Network_Analysis_Visualization.png">CC BY-SA 3.0 - Martin Grandjean</a>
+						</li>
+						<li>Half an hour of web ads -
+						<a href="https://www.flickr.com/photos/dno1967b/8283313605">CC BY 2.0 - Daniel Oines</a>
+						</li>
+						<li>Detail Showing North America - de l'Isle globe, 1765 -
+						<a href="https://www.flickr.com/photos/minnesotahistoricalsociety/3150759433">CC BY-SA 2.0 - Minnesota Historical Society</a>
+						</li>
+						<li>Mickey Mantle in a 1953 razor ad -
+						<a href="https://commons.wikimedia.org/wiki/File:1953_Gem_Razor_Ad_with_Mickey_Mantle.jpg">Public Domain - ASR</a>
+						</li>
+						<li>Avocat avec noyau pris en macro -
+						<a href="https://commons.wikimedia.org/wiki/File:Avocat.png">CC BY-SA 3.0 - Keledjian Alexandre</a>
+						</li>
 					</ul>
 				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -391,6 +669,7 @@ Reveal.addEventListener( 'customevent', function() {
 				progress: true,
 				history: true,
 				center: true,
+				showNotes: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 

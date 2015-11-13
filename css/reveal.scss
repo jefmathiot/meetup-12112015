@@ -1369,3 +1369,231 @@ html:-moz-full-screen-ancestor {
 }
 
 
+/*********************************************
+ * CUSTOM
+ *********************************************/
+.reveal section img {
+		border: none !important;
+		background: none !important;
+		box-shadow: none !important;
+}
+
+blockquote {
+	width: 100% !important;
+	background: none !important;
+	&::before {
+		content: "“";
+		font-size: 5em;
+		position: absolute;
+		left: 0;
+		top: -0.2em;
+	}
+}
+
+#intro {
+	h1 {
+    line-height: 1.4em;
+		span {
+			display: block;
+			&:first-child{
+				color: #9E1E4C;
+			}
+			&:nth-child(2) {
+				color: #ECECEC;
+				font-size: 1.68em;
+			}
+			&:last-child{
+				color: #FF1168;
+				font-size: 0.85em;
+			}
+		}
+	}
+	aside{
+		font-size: 0.5em;
+	}
+}
+
+#ethics h2 {
+	font-size: 2em;
+	color: #F0D8D8;
+}
+
+#surveillance, #nsa-gchq-fr, #moyens-doctrine, #gafam {
+	h2, h3 {
+		span:first-child{
+			font-weight: lighter;
+			color: #C0C078;
+		}
+		span:last-child{
+			display: block;
+			color: #F00000;
+			font-size: 1.45em;
+		}
+	}
+}
+
+#state-surveillance {
+	h2{
+		color: #661111;
+		span{
+			color: #CA0700;
+		}
+	}
+}
+
+#snowden-leaks {
+	h3 {
+		font-size: 2.5em;
+		span:first-child{
+			color: #FE3942;
+		}
+	}
+}
+
+#prism {
+	img {
+		vertical-align: middle;
+	}
+
+	h3 {
+		color: #FE3942;
+		display: inline;
+		font-size: 2em;
+	}
+}
+
+
+#upstream, #loi-surveillance-internationale,
+#loi-surveillance-internationale-decret-2007 {
+	h3 {
+		color: #FF0051;
+		font-size: 3em;
+		line-height: 0.8em;
+		span{
+			font-weight: lighter;
+			display: block;
+		}
+		span:last-child{
+			color: #fff;
+			font-size: 0.87em;
+		}
+	}
+}
+
+#xkeyscore, #snoopers-charter, #loi-renseignement,
+#loi-renseignement-piratage, #loi-renseignement-executif {
+	h3 {
+		font-size: 2em;
+		span{
+			color: #FE3942;
+		}
+	}
+}
+
+#fisa, #dsac {
+	h3{
+		line-height: 1em;
+		font-size: 2em;
+		color: #9E1E4C;
+		span:first-child {
+			color: #FF1168;
+		}
+		span:last-child{
+			font-weight: lighter;
+		}
+	}
+}
+
+#fisa {
+	h3 span:last-child{
+		font-size: 1.27em;
+	}
+}
+
+#dsac {
+	h3 span:last-child{
+		font-size: 1.1em;
+	}
+}
+
+#loi-renseignement-donnees-connexion {
+	h3 {
+		font-size: 2em;
+		span {
+			display: block;
+			font-weight: lighter;
+			font-size: 0.9em;
+		}
+	}
+}
+
+#loi-renseignement-boites-noires {
+	top: 0px !important;
+	font-size: 1.3em;
+	span{
+		font-weight: lighter;
+	}
+}
+
+#loi-renseignement-cnctr, #loi-renseignement-crypto,
+#loi-renseignement-sanctions, #loi-renseignement-recours{
+	h3{
+		font-size: 3em;
+		font-weight: lighter;
+	}
+}
+
+#loi-surveillance-internationale-decret-2007 {
+	h3 span{
+		display: inline;
+		font-size: 1em !important;
+	}
+}
+
+#internet-silos, #so-what {
+	h2{
+		span:last-child{
+			display: block;
+			font-weight: lighter;
+			color: #FE3942;
+			font-size: 1.8em;
+		}
+	}
+}
+
+#facebook{
+	h3 {
+		font-size: 3em;
+		font-weight: lighter;
+	}
+}
+
+#crime-surveillance{
+	h2{
+		font-size: 2em;
+		span{
+			display: block;
+			color: #FE3942;
+		}
+	}
+}
+
+
+#solutions h2, #dont-collect h3,
+#accompagnement-juridique h3, #third-parties h3,
+#modele-de-menace h3, #politique-securite h3,
+#audits-securite h3, #dod h3,
+#transparence h3 {
+	font-size: 2em;
+	color: #F0D8D8;
+}
+
+#team {
+	img{
+		width: 110px;
+	}
+}
+
+section.credits{
+	font-size: 0.5em;
+}

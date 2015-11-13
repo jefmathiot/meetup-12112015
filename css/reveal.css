@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * reveal.js
  * http://lab.hakim.se/reveal-js
@@ -59,8 +60,8 @@ html:-moz-full-screen-ancestor {
 .reveal .slides section .fragment {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease; }
   .reveal .slides section .fragment.visible {
     opacity: 1;
     visibility: visible; }
@@ -1329,3 +1330,156 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * CUSTOM
+ *********************************************/
+.reveal section img {
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important; }
+
+blockquote {
+  width: 100% !important;
+  background: none !important; }
+  blockquote::before {
+    content: "“";
+    font-size: 5em;
+    position: absolute;
+    left: 0;
+    top: -0.2em; }
+
+#intro h1 {
+  line-height: 1.4em; }
+  #intro h1 span {
+    display: block; }
+    #intro h1 span:first-child {
+      color: #9E1E4C; }
+    #intro h1 span:nth-child(2) {
+      color: #ECECEC;
+      font-size: 1.68em; }
+    #intro h1 span:last-child {
+      color: #FF1168;
+      font-size: 0.85em; }
+
+#intro aside {
+  font-size: 0.5em; }
+
+#ethics h2 {
+  font-size: 2em;
+  color: #F0D8D8; }
+
+#surveillance h2 span:first-child, #surveillance h3 span:first-child, #nsa-gchq-fr h2 span:first-child, #nsa-gchq-fr h3 span:first-child, #moyens-doctrine h2 span:first-child, #moyens-doctrine h3 span:first-child, #gafam h2 span:first-child, #gafam h3 span:first-child {
+  font-weight: lighter;
+  color: #C0C078; }
+
+#surveillance h2 span:last-child, #surveillance h3 span:last-child, #nsa-gchq-fr h2 span:last-child, #nsa-gchq-fr h3 span:last-child, #moyens-doctrine h2 span:last-child, #moyens-doctrine h3 span:last-child, #gafam h2 span:last-child, #gafam h3 span:last-child {
+  display: block;
+  color: #F00000;
+  font-size: 1.45em; }
+
+#state-surveillance h2 {
+  color: #661111; }
+  #state-surveillance h2 span {
+    color: #CA0700; }
+
+#snowden-leaks h3 {
+  font-size: 2.5em; }
+  #snowden-leaks h3 span:first-child {
+    color: #FE3942; }
+
+#prism img {
+  vertical-align: middle; }
+
+#prism h3 {
+  color: #FE3942;
+  display: inline;
+  font-size: 2em; }
+
+#upstream h3, #loi-surveillance-internationale h3,
+#loi-surveillance-internationale-decret-2007 h3 {
+  color: #FF0051;
+  font-size: 3em;
+  line-height: 0.8em; }
+  #upstream h3 span, #loi-surveillance-internationale h3 span,
+  #loi-surveillance-internationale-decret-2007 h3 span {
+    font-weight: lighter;
+    display: block; }
+  #upstream h3 span:last-child, #loi-surveillance-internationale h3 span:last-child,
+  #loi-surveillance-internationale-decret-2007 h3 span:last-child {
+    color: #fff;
+    font-size: 0.87em; }
+
+#xkeyscore h3, #snoopers-charter h3, #loi-renseignement h3,
+#loi-renseignement-piratage h3, #loi-renseignement-executif h3 {
+  font-size: 2em; }
+  #xkeyscore h3 span, #snoopers-charter h3 span, #loi-renseignement h3 span,
+  #loi-renseignement-piratage h3 span, #loi-renseignement-executif h3 span {
+    color: #FE3942; }
+
+#fisa h3, #dsac h3 {
+  line-height: 1em;
+  font-size: 2em;
+  color: #9E1E4C; }
+  #fisa h3 span:first-child, #dsac h3 span:first-child {
+    color: #FF1168; }
+  #fisa h3 span:last-child, #dsac h3 span:last-child {
+    font-weight: lighter; }
+
+#fisa h3 span:last-child {
+  font-size: 1.27em; }
+
+#dsac h3 span:last-child {
+  font-size: 1.1em; }
+
+#loi-renseignement-donnees-connexion h3 {
+  font-size: 2em; }
+  #loi-renseignement-donnees-connexion h3 span {
+    display: block;
+    font-weight: lighter;
+    font-size: 0.9em; }
+
+#loi-renseignement-boites-noires {
+  top: 0px !important;
+  font-size: 1.3em; }
+  #loi-renseignement-boites-noires span {
+    font-weight: lighter; }
+
+#loi-renseignement-cnctr h3, #loi-renseignement-crypto h3,
+#loi-renseignement-sanctions h3, #loi-renseignement-recours h3 {
+  font-size: 3em;
+  font-weight: lighter; }
+
+#loi-surveillance-internationale-decret-2007 h3 span {
+  display: inline;
+  font-size: 1em !important; }
+
+#internet-silos h2 span:last-child, #so-what h2 span:last-child {
+  display: block;
+  font-weight: lighter;
+  color: #FE3942;
+  font-size: 1.8em; }
+
+#facebook h3 {
+  font-size: 3em;
+  font-weight: lighter; }
+
+#crime-surveillance h2 {
+  font-size: 2em; }
+  #crime-surveillance h2 span {
+    display: block;
+    color: #FE3942; }
+
+#solutions h2, #dont-collect h3,
+#accompagnement-juridique h3, #third-parties h3,
+#modele-de-menace h3, #politique-securite h3,
+#audits-securite h3, #dod h3,
+#transparence h3 {
+  font-size: 2em;
+  color: #F0D8D8; }
+
+#team img {
+  width: 110px; }
+
+section.credits {
+  font-size: 0.5em; }
